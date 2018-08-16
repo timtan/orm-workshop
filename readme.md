@@ -1,4 +1,4 @@
-準備好 virtualenv 以後，執行好下面的指令以後，就可以開始本次的 workshop
+準備好 virtualenv ，執行好下面的指令以後，就可以開始本次的 workshop
 
 
 ```bash
@@ -13,4 +13,4 @@ python demo/manage.py shell_plus --notebook
 
 ```
 
-than click the ipython notebook file to enjoy the workshop
+啟動以後，看到附檔名為  ipynb 的檔案以後，按下開始執行 jupyter notebook
