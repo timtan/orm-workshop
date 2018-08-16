@@ -1,3 +1,6 @@
+準備好 virtualenv 以後，執行好下面的指令以後，就可以開始本次的 workshop
+
+
 ```bash
 
 virtualenv venv
@@ -10,4 +13,4 @@ python demo/manage.py shell_plus --notebook
 
 ```
 
-than clieck the ipython notebook file to enjoy the workshop
+than click the ipython notebook file to enjoy the workshop
