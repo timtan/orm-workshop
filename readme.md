@@ -7,9 +7,10 @@ virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-python demo/manage.py migrate
-python demo/manage.py runscript create_default_data
-python demo/manage.py shell_plus --notebook
+cd demo
+python manage.py migrate
+python manage.py runscript create_default_data
+python manage.py shell_plus --notebook
 
 ```
 
