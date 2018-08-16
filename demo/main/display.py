@@ -2,7 +2,8 @@ import pandas as pd
 
 
 def table(queryset):
-    data = list(queryset.values())
+    data = list(queryset)
     df = pd.DataFrame(data)
-    del df['id']
+    if 'id' in df:
+        del df['id']
     return df

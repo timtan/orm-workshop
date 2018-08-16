@@ -2,6 +2,10 @@
 from __future__ import absolute_import, unicode_literals
 import random
 import functools
+
+from django.utils.timezone import make_aware
+from django.utils import dateparse
+
 from .models import Product, SaleRecord, Channel
 
 
@@ -26,11 +30,11 @@ def init_default_data():
     c3 = Channel.objects.create(name="拳家")
 
     datetime_points = [
-        '2017-07-04',
-        '2017-10-10',
-        '2018-01-05',
-        '2018-04-06',
-        '2018-07-06',
+        make_aware(dateparse.parse_datetime('2017-07-04 01:01:01')),
+        make_aware(dateparse.parse_datetime('2017-10-10 01:01:01')),
+        make_aware(dateparse.parse_datetime('2018-01-05 01:01:01')),
+        make_aware(dateparse.parse_datetime('2018-04-06 01:01:01')),
+        make_aware(dateparse.parse_datetime('2018-07-06 01:01:01')),
     ]
 
     for product in products:
